@@ -10,7 +10,17 @@ import Navbar from "./navBar";
 import Products from "./products";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const products: Product[] = await import("../product/mock.json").then(
+  const products:
+    | Product[]
+    | {
+        id: string;
+        image: string;
+        price: number;
+        name: string;
+        description: string;
+        options: { label: string; values: string[] }[];
+      }[]
+    | undefined = await import("../product/mock.json").then(
     (res) => res.default
   );
 

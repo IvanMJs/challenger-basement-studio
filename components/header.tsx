@@ -1,6 +1,6 @@
 import Image from "next/image";
-import group from "../assets/group.png";
-import header from "../assets/header/header.png";
+import group from "../public/assets/group.png";
+import header from "../public/assets/header/header.png";
 import Marquee from "react-fast-marquee";
 
 const Header = () => {

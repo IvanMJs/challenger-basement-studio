@@ -1,8 +1,8 @@
 import Image from "next/image";
-import logo from "../assets/header/logo.png";
-import group2 from "../assets/group2.png";
+import logo from "../public/assets/header/logo.png";
+import group2 from "../public/assets/group2.png";
 import useWindowSize from "../hooks/useDeviceDetect";
-import deviceLogo from "../assets/header/deviceLogo.png";
+import deviceLogo from "../public/assets/header/deviceLogo.png";
 
 interface Props {
   cart: any;

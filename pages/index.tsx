@@ -4,10 +4,10 @@ import type { GetStaticProps, NextPage } from "next";
 
 import { Product } from "../product/types";
 import Modal from "../components/modal";
-import Header from "./header";
-import Footer from "./footer";
-import Navbar from "./navBar";
-import Products from "./products";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Navbar from "../components/navBar";
+import Products from "../components/products";
 
 export const getStaticProps: GetStaticProps = async () => {
   const products:

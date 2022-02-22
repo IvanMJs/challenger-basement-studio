@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { Product } from "../product/types";
-import yourCart from "../assets/cart/yourCart.png";
+import yourCart from "../public/assets/cart/yourCart.png";
 import Image from "next/image";
 import { Key } from "react";
-import ProductModal from "../pages/productModal";
-import closeImage from "../assets/cart/closeCart.png";
+import ProductModal from "./productModal";
+import closeImage from "../public/assets/cart/closeCart.png";
 interface Props {
   products: Product[];
   setCart: any;

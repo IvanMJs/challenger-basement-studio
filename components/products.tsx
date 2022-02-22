@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import InputSearch from "../components/inputSearch";
+import InputSearch from "./inputSearch";
 import { Product } from "../product/types";
-import addToCar from "../assets/products/add-to-cart.png";
+import addToCar from "../public/assets/productCart/add-to-cart.png";
 
 interface Props {
   products: Product[];
@@ -13,7 +13,7 @@ interface Props {
 
 const Products: NextPage<Props> = ({ products, setCart }: Props) => {
   const [search, setSearch] = useState("");
-  console.log(products);
+  
   const filteredProduct = useMemo(
     () =>
       products.filter((ep) => {
